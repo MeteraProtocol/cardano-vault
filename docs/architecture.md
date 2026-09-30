@@ -70,7 +70,7 @@ This flow expresses the intended integration boundary. It does not prescribe Liq
 
 New DeFi protocols should be integratable by implementing compatible executors rather than modifying core vault logic. Compatibility requires preserving pool invariants and providing the validation and accounting evidence required by the executor interface.
 
-Strike is only an example of a possible future integration, subject to technical compatibility verification. It is not a confirmed integration.
+The future protocol and executor shown in the diagram represent an extension point. Any additional integration remains subject to technical compatibility verification.
 
 ## Concurrency
 
@@ -97,4 +97,4 @@ These are requirements to implement and verify, not assurances of current securi
 
 ![Metera Cardano Vault Architecture](assets/architecture.png)
 
-The supplied diagram is an early conceptual sketch. Its legacy lending labels refer to the intended Liqwid reference executor; its Strike branch is unverified and includes copied reference-flow labels. It also sketches potential datum and configuration fields that are not final schemas. Read those annotations in conjunction with the qualified design above. The pool shown represents one of many independent strategy pools, each with its own canonical state UTxO and Pool NFT.
+The diagram shows Global Settings, strategy pool management, user orders, batch processing and protocol-specific executor flows. Minswap and Liqwid are the reference executor targets; the future executor illustrates how additional protocols can be integrated. The pool shown represents one of many independent strategy pools, each with its own canonical state UTxO and Pool NFT. Datum and configuration annotations describe the intended design, with exact schemas still under development.

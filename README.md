@@ -18,7 +18,7 @@ On-chain contracts are written in Aiken as implementation progresses. Off-chain 
 
 ![Metera Cardano Vault Architecture](docs/assets/architecture.png)
 
-The diagram’s older labels should be read alongside the [technical architecture](docs/architecture.md), which uses Liqwid consistently and treats Strike only as a possible future integration subject to technical compatibility verification.
+The diagram shows the pool and order flow, the Minswap and Liqwid reference executors, and an extension point for future protocol executors. See the [technical architecture](docs/architecture.md) for details.
 
 ## Goals
 
